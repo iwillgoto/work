@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN""http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>jquery实现图片翻牌旋转特效</title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script>
+			$(function(){
+				var aLi = $('#brand .bd-box li');
+				var aImg =  $('#brand .bd-box li img');
+				var aSpan = $('#brand .bd-box li span');
+				aLi.each(function(index){
+					$(this).mouseover(function(){
+						aSpan.eq(page2).stop();
+						aImg.eq(page2).stop();
+						aImg.eq(page2).css({zIndex:1}).animate({
+							top:37,
+							height:0
+						},80,'',function(){
+							$(this).hide();
+							aSpan.eq(page2).show().css({zIndex:2}).animate({
+								top:0,
+								height:75
+							},80)
+						})
+					})
+					$(this).mouseout(function(){
+						aSpan.eq(page2).stop();
+						aImg.eq(page2).stop();
+						aSpan.eq(page2).css({zIndex:1}).animate({
+							top:37,
+							height:0
+						},80,'',function(){
+							$(this).hide();
+							aImg.eq(page2).show().css({zIndex:2}).animate({
+								top:0,
+								height:75
+							},80)
+						})
+					})
+				})
+			})
+		</script>
+	</head>
+	<body>
+	<div data-role="page" id="pageone">
+		<div id="brand">
+			<div class='title'>
+				南宁市办税地图
+			</div>
+			<ul class='bd-box'>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/1.jpg" />
+					<span>青秀区</span>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/2.jpg" />
+					<span>兴宁区</span>
+					<ul>
+						<a href="#">dasfg</a>
+					</ul>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/3.jpg" />
+					<span>西乡塘区</span>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/4.jpg" />
+					<span>江南区</span>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/5.jpg" />
+					<span>良庆区</span>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/6.jpg" />
+					<span>邕宁区</span>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/7.jpg" />
+					<span>武鸣县</span>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/8.jpg" />
+					<span>宾阳县</span>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/8.jpg" />
+					<span>横县</span>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/8.jpg" />
+					<span>上林县</span>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/8.jpg" />
+					<span>隆安县</span>
+				</li>
+				<li>
+					<a href="http://sc.chinaz.com"> </a>
+					<img src="images/8.jpg" />
+					<span>马山县</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	</body>
+</html>
+
+

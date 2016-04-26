@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN""http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>南宁市办税地图</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+		<!--<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">-->
+		<link rel="stylesheet" href="css/index.css">
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<style type="text/css">
+			body{
+              /*background: url("images/background1.jpg") no-repeat center;*/
+			}
+			.ui-loader .ui-icon-loading{
+				display: none;
+			}
+		</style>
+		<script>
+			$(function(){
+				var aLi = $('#brand .bd-box li');
+				var aImg =  $('#brand .bd-box li img');
+				var aSpan = $('#brand .bd-box li span');
+				aLi.each(function(index){
+					$(this).mouseover(function(){
+						aSpan.eq(index).stop();
+						aImg.eq(index).stop();
+						aImg.eq(index).css({zIndex:1}).animate({
+							top:37,
+							height:0
+						},80,'',function(){
+							$(this).hide();
+							aSpan.eq(index).show().css({zIndex:2}).animate({
+								top:0,
+								height:75
+							},80)
+						})
+					})
+					$(this).mouseout(function(){
+						aSpan.eq(index).stop();
+						aImg.eq(index).stop();
+						aSpan.eq(index).css({zIndex:1}).animate({
+							top:37,
+							height:0
+						},80,'',function(){
+							$(this).hide();
+							aImg.eq(index).show().css({zIndex:2}).animate({
+								top:0,
+								height:75
+							},80)
+						})
+					})
+				})
+				//导入页面
+
+			})
+		</script>
+	</head>
+	<body>
+	<div data-role="page" id="page">
+
+		<div data-role="main" class="ui-content">
+
+		<div id="brand">
+			<div class='title'>
+				<h3>南宁市办税地图</h3>
+			</div>
+			<ul class='bd-box'>
+				<li>
+					<a href="#page1"> </a>
+					<img src="images/01.jpg" />
+					<span>青秀区</span>
+
+
+				</li>
+				<li>
+					<a href="#page2"> </a>
+					<img src="images/02.jpg" />
+					<span>兴宁区</span>
+				</li>
+				<li>
+					<a href="#page3"> </a>
+					<img src="images/03.jpg" />
+					<span>西乡塘区</span>
+				</li>
+				<li>
+					<a href="#page4"> </a>
+					<img src="images/04.jpg" />
+					<span>江南区</span>
+				</li>
+				<li>
+					<a href="#page5"> </a>
+					<img src="images/05.jpg" />
+					<span>良庆区</span>
+				</li>
+				<li>
+					<a href="#page6"> </a>
+					<img src="images/06.jpg" />
+					<span>邕宁区</span>
+				</li>
+				<li>
+					<a href="#page7"> </a>
+					<img src="images/07.jpg" />
+					<span>武鸣县</span>
+				</li>
+				<li>
+					<a href="#page8"> </a>
+					<img src="images/08.jpg" />
+					<span>宾阳县</span>
+				</li>
+				<li>
+					<a href="#page9"> </a>
+					<img src="images/09.jpg" />
+					<span>横县</span>
+				</li>
+				<li>
+					<a href="#page10"> </a>
+					<img src="images/10.jpg" />
+					<span>上林县</span>
+				</li>
+				<li>
+					<a href="#page11"> </a>
+					<img src="images/11.jpg" />
+					<span>隆安县</span>
+				</li>
+				<li>
+					<a href="#page12"> </a>
+					<img src="images/12.jpg" />
+					<span>马山县</span>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="page1">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到青秀区</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">青秀区</h1>
+					<li><a href="page/qxq/qxq1.html" target="_top">自治区地税局直属税务局分局办税服务厅</a></li>
+					<li><a href="page/qxq/qxq2.html" target="_top">自治区政务服务中心地税窗口</a></li>
+					<li><a href="page/qxq/qxq3.html" target="_top">南宁市地税局直属第一税务局分局金禄办税服务厅</a></li>
+					<li><a href="page/qxq/qxq4.html" target="_top">南宁市地税局直属第一税务局分局产房点办税服务厅</a></li>
+					<li><a href="page/qxq/qxq5.html" target="_top">南宁青秀山风景区地税局办税服务厅</a></li>
+					<li><a href="page/qxq/qxq6.html" target="_top">南宁市青秀区地方税务局办税服务厅</a></li>
+					<li><a href="page/qxq/qxq7.html" target="_top">南宁市青秀区地方税务局琅西办税服务厅</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div data-role="page" id="page2">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到兴宁区</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">兴宁区</h1>
+					<li><a href="page/xnq/xnq.html" target="_top">南宁市兴宁区地方税务局办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page3">
+		<div data-role="header" style=" background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到西乡塘区</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">西乡塘区</h1>
+					<li><a href="page/xxtq/xxtq1.html" target="_top">南宁市地税局直属第二税务分局办税服务厅</a></li>
+					<li><a href="page/xxtq/xxtq2.html" target="_top">南宁高新技术产业开发区地方税务局办税服务厅</a></li>
+					<li><a href="page/xxtq/xxtq3.html" target="_top">南宁市西乡塘区地方税务局办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page4">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到江南区</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">江南区</h1>
+					<li><a href="page/jnq/jnq1.html" target="_top">南宁经济技术开发区地方税务局办税服务厅</a></li>
+					<li><a href="page/jnq/jnq2.html" target="_top">南宁市江南区地方税务局华南城办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page5">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到良庆区</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">江南区</h1>
+					<li><a href="page/lqq/lqq1.html" target="_top">南宁市良庆区地方税务局办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page6">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到邕宁区</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">江南区</h1>
+					<li><a href="page/ynq/ynq.html" arget="_top">南宁市邕宁区地方税务局办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page7">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到武鸣县</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">武鸣县</h1>
+					<li><a href="page/wmx/wmx1.html" arget="_top">南宁华侨投资区地方税务局办税服务厅</a></li>
+					<li><a href="page/wmx/wmx2.html" arget="_top"wmx>武鸣地方税务局城厢税务分局办税服务厅</a></li>
+					<li><a href="page/wmx/wmx3.html" arget="_top">武鸣地方税务局双桥税务分局办税服务厅</a></li>
+					<li><a href="page/wmx/wmx4.html" arget="_top">武鸣地方税务局锣圩税务分局办税服务厅</a></li>
+					<li><a href="page/wmx/wmx5.html" arget="_top">武鸣地方税务局府城税务分局办税服务厅</a></li>
+					<li><a href="page/wmx/wmx6.html" arget="_top">武鸣地方税务局陆翰税务分局办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page8">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到宾阳县</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">宾阳县</h1>
+					<li><a href="page/byx/byx1.html" arget="_top">宾阳县地方税务局宾州税务分局办税服务厅</a></li>
+					<li><a href="page/byx/byx2.html" arget="_top">宾阳县地方税务局思陇税务分局办税服务厅</a></li>
+					<li><a href="page/byx/byx3.html" arget="_top">宾阳县地方税务局新桥税务分局办税服务厅</a></li>
+					<li><a href="page/byx/byx4.html" arget="_top">宾阳县地方税务局大桥税务分局办税服务厅</a></li>
+					<li><a href="page/byx/byx5.html" arget="_top">宾阳县地方税务局古辣税务分局办税服务厅</a></li>
+					<li><a href="page/byx/byx6.html" arget="_top">宾阳县地方税务局甘棠税务分局办税服务厅</a></li>
+					<li><a href="page/byx/byx7.html" arget="_top">宾阳县地方税务局黎塘税务分局办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page9">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到横县</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">横县</h1>
+					<li><a href="page/hx/hx1.html" arget="_top">横县地方税务局横州税务分局办税服务厅</a></li>
+					<li><a href="page/hx/hx2.html" arget="_top">横县地方税务局六景税务分局办税服务厅</a></li>
+					<li><a href="page/hx/hx3.html" arget="_top">横县地方税务局百合税务分局办税服务厅</a></li>
+					<li><a href="page/hx/hx4.html" arget="_top">横县地方税务局峦城税务分局办税服务厅</a></li>
+					<li><a href="page/hx/hx5.html" arget="_top">横县地方税务局校椅税务分局办税服务厅</a></li>
+					<li><a href="page/hx/hx6.html" arget="_top">横县地方税务局石塘税务分局办税服务厅</a></li>
+					<li><a href="page/hx/hx7.html" arget="_top">横县地方税务局云表税务分局办税服务厅</a></li>
+					<li><a href="page/hx/hx8.html" arget="_top">横县地方税务局南乡税务分局办税服务厅</a></li>
+					<li><a href="page/hx/hx9.html" arget="_top">横县地方税务局那阳税务分局办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page10">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到上林县</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">上林县</h1>
+					<li><a href="page/slx/slx1.html" arget="_top">上林县地方税务局大丰税务分局办税服务厅</a></li>
+					<li><a href="page/slx/slx2.html" arget="_top">上林县地方税务局白圩税务分局办税服务厅</a></li>
+					<li><a href="page/slx/slx3.html" arget="_top">上林县地方税务局三里税务分局办税服务厅</a></li>
+					<li><a href="page/slx/slx4.html" arget="_top">上林县地方税务局桥贤税务分局办税服务厅</a></li>
+					<li><a href="page/slx/slx5.html" arget="_top">上林县地方税务局镇圩税务分局办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page11">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到隆安县</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">隆安县</h1>
+					<li><a href="page/lax/lax1.html" arget="_top">隆安县地方税务局办税服务厅</a></li>
+					<li><a href="page/lax/lax2.html" arget="_top">隆安县地方税务局那桐税务分局办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page12">
+		<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">
+			<h1>欢迎来到马山县</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div style="margin-top: 50px;">
+				<ul data-role="listview" >
+					<h1 style="background-color: #2ba5ff;width: 100px;color: #ffffff">马山县</h1>
+					<li><a href="page/msx/msx1.html" arget="_top">马山县地方税务局白山税务分局办税服务厅</a></li>
+					<li><a href="page/msx/msx2.html" arget="_top">马山县地方税务局古零税务分局办税服务厅</a></li>
+					<li><a href="page/msx/msx3.html" arget="_top">马山县地方税务局周鹿税务分局办税服务厅</a></li>
+					<li><a href="page/msx/msx4.html" arget="_top">马山县地方税务局林圩税务分局办税服务厅</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	</body>
+</html>
+
+

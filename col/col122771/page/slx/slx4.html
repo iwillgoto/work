@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script>
+//        location.reload();
+
+    </script>
+    <style type="text/css">
+        #allmap{
+            width: 500px;
+            height: 400px;
+        }
+        body{
+            text-align: center;
+            background: #b0ceff;
+        }
+        li{
+            list-style-type: none;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=MX6LPzX4aIpjmoS1MpVuar7S"></script>
+    <title>地址解析</title>
+    <script async src="http://c.cnzz.com/core.php"></script></head>
+<body>
+<div data-role="page" id="qx1">
+    <!--<div data-role="header" style="background-color: #2ba5ff;color: #ffffff">-->
+    <!--<h1>欢迎来到自治区地税局直属税务局分局办税服务厅</h1>-->
+    <!--</div>-->
+    <div data-role="main" class="ui-content">
+        <div>
+            <h1>上林县地方税务局乔贤税务分局办税服务厅</h1>
+            <p>2016-4-22&nbsp&nbsp&nbsp&nbsp南宁地税</p>
+        </div>
+        <div style="margin-top: 50px;width: 500px;height:300px;border: 1px solid #2ba5ff;margin: auto;padding: 0;">
+            <h3 style="background-color: #2ba5ff;color: #ffffff;margin-top: 0px">上林县地方税务局乔贤税务分局办税服务厅</h3>
+            <ul style="padding-left: 0;text-align: left;line-height: 30px">
+                <li>办税地址：上林县乔贤镇乔贤东街</li>
+                <li>税务咨询：0771-5280466</li>
+                <li>办公时间：正常行政工作时间</li>
+            </ul>
+        </div>
+        <div style="margin-top:10px;border: 1px solid #2ba5ff;width: 500px;height: 400px;margin: auto">
+            <h3 style="width: 500px;height: 40px;border: 1px solid #2ba5ff;margin: auto;background-color: #2ba5ff;color: #ffffff;margin-top: 0px">地图名片</h3>
+            <!--地图容器-->
+            <div id="allmap" style="border: 1px solid #2ba5ff;margin: auto">
+            </div>
+            <div style="border: 1px solid #2ba5ff;text-align: left">
+                <h5>附近公交/地铁</h5>
+                公交：<br>
+                地铁：
+            </div>
+        </div>
+        <div style="height: 100px;width: 100%">
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript" src="../../js/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398,39.897445);
+    map.centerAndZoom(point,12);
+    // 创建地址解析器实例
+    var myGeo = new BMap.Geocoder();
+    // 将地址解析结果显示在地图上,并调整地图视野
+    myGeo.getPoint("上林县乔贤镇乔贤东街", function(point){
+        if (point) {
+            map.centerAndZoom(point, 16);
+            map.addOverlay(new BMap.Marker(point));
+        }else{
+            alert("您选择地址没有解析到结果!");
+        }
+    }, "南宁市");
+})
+</script>

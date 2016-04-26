@@ -1,0 +1,114 @@
+body {
+    overflow-x: hidden;
+    text-align: center;
+}
+
+
+
+
+/*菜单列表背景色渐变*/
+.well,.dropdown-menu{
+    background:-webkit-gradient(linear, 0% 0%, 50% 100%,from(#f6f6f8), to(#c0dee2));
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#b8c4cb,endColorStr=blue); /*IE 6 7 8*/
+
+    background: -ms-linear-gradient(top, #fff,  #2699cb);        /* IE 10 */
+
+    background:-moz-linear-gradient(top,#b8c4cb,#f6f6f8);/*火狐*/
+
+    /*background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#b8c4cb), to(#f6f6f8));!*谷歌*!*/
+
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#c0dee2));      /* Safari 4-5, Chrome 1-9*/
+
+    background: -webkit-linear-gradient(top, #fff, #c0dee2);   /*Safari5.1 Chrome 10+*/
+
+    background: -o-linear-gradient(top, #fff, #c0dee2);  /*Opera 11.10+*/
+
+
+}
+
+
+.dropdown-menu{
+    font-size: 16px;
+
+}
+.dropdown-menu>li>a {
+    /*margina-left: 10px;*/
+}
+.dropdown ul{
+    overflow-x: hidden;
+}
+
+.dropdown ul >li{
+    /*border: 1px solid red;*/
+
+    /*display: none;*/
+    opacity:0;
+    padding-left: 0px;
+}
+.dropdown ul li a{
+    margin: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /*border-bottom: 1px solid #CCCCCC;*/
+    /*border-bottom-width: 10px;*/
+
+
+
+}
+.dropdown li{
+    /*border-bottom: 1px solid #CCCCCC;*/
+
+
+}
+.dropdown ul li {
+    /*margin-top: 20px;*/
+    padding: 0px;
+    /*border-bottom: 1px solid #ffffff;*/
+
+}
+/*偶数行*/
+.dropdown ul li:nth-child(2n){
+    left: 300px;
+}
+/*奇数行*/
+.dropdown ul li:nth-child(2n+1){
+    left: -200px;
+}
+#main_div .dropdown-menu img{
+    width: 34px;
+    height: 34px;
+}
+.dropdown .dropdown-submenu a{
+    top: 0px;
+    padding-left: 10px;
+}
+.dropdown-submenu > a:after {
+    display: none;
+}
+/*.main_left >div{*/
+/*border: 2px solid red;*/
+/*position: absolute;*/
+/*}*/
+
+
+.btn-primary {
+    background-color: #AFD5DE;
+    border-color: #AFD5DE;
+}
+.dropdown a{
+    /*border: 1px solid red;*/
+    padding: 5px;
+}
+.main_left{
+    width: 320px;
+    height: 410px;
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+
+}
+#dropdown3 ul{
+    /*border: 3px solid blue;*/
+    width: 320px;
+    height: 410px;
+}
